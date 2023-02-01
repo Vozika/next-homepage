@@ -1,12 +1,12 @@
 .main {
     background-color: rgb(var(--light-rgb));
     padding: 0px;
-    height: 30em;
+    height: 26em;
     /* width: 100%; */
     position: relative;
     margin-bottom: 32px;
     /* background-color: aqua; */
-    
+
 }
 
 .line {
@@ -33,11 +33,31 @@
 }
 
 .image {
-    
     object-fit: contain;
     opacity: 1;
 }
 
+.image_modal_container {
+    width: 100%;
+    /* position: unset !important; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    
+}
+
+/* .image_modal_container>div {
+    position: unset !important;
+} */
+
+.image_modal {
+    object-fit: fill;
+    width: 100%;
+    position: relative !important;
+    
+    
+    
+}
 
 
 .info {
@@ -50,7 +70,6 @@
     z-index: 1000;
     padding: 32px;
     color: rgb(var(--light-rgb));
-
 
 }
 
@@ -67,4 +86,10 @@
     opacity: 0.3;
     transform: scale(0.8);
     transition: opacity 0.8s;
+}
+
+@media screen and (max-width: 1100px) {
+    .main {
+        height: fit-content;
+    }
 }

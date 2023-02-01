@@ -1,27 +1,47 @@
 import React from "react";
 import styles from "../styles/CodeCard.module.css";
+import { Tech } from "../data/code_data";
 import { VscMultipleWindows } from "react-icons/vsc";
 import { VscGithub } from "react-icons/vsc";
+import { FaHtml5 } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+import { FaReact } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaSass } from "react-icons/fa";
+import { SiMaterialui } from "react-icons/si";
 
 interface Props {
   title: string;
   text: string;
   github_url: string;
+  tech: Tech;
 }
 
 const url = "";
 const github_prefix = "https://github.com/Vozika/";
 
-const CodeCard = ({ title, text, github_url }: Props) => {
+const CodeCard = ({ title, text, github_url, tech }: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.main}>
         <h1>{title}</h1>
         <p>
           {text}
-          <br />
-          <br />
+          <br /><br />
         </p>
+
+        <div  className={styles.tech_icons_container}>
+          {tech.html ? <FaHtml5 color="silver" size={48} /> : ""}
+          {tech.css ? <IoLogoCss3 color="silver" size={48} /> : ""}
+          {tech.react ? <FaReact color="silver" size={48} /> : ""}
+          {tech.sass ? <FaSass color="silver" size={48} /> : ""}
+          {tech.typescript ? <SiTypescript color="silver" size={48} /> : ""}
+          {tech.next ? <TbBrandNextjs color="silver" size={48} /> : ""}
+          {tech.mui ? <SiMaterialui color="silver" size={48} /> : ""}
+        </div>
+
+        <br />
 
         <div className={styles.icons_container}>
           <div className={styles.icons_container_block}>

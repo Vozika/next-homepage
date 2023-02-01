@@ -5,17 +5,21 @@ import { useRouter } from "next/router";
 
 const menu_data = [
   { text: "Home", url: "" },
-  { text: "Обо мне", url: "about" },
-  { text: "Код", url: "code" },
-  { text: "Дизайн", url: "design" },
+  { text: "Обо мне", url: "about/" },
+  { text: "Код", url: "code/" },
+  { text: "Дизайн", url: "design/" },
 ];
 
 const Navbar = () => {
   const router = useRouter();
+  console.log(router.asPath);
+  console.log("Fuck");
 
   return (
     <div className={styles.main}>
       {menu_data.map((data) => {
+        
+
         return "/" + data.url !== router.asPath ? (
           <div key={data.text}>
             <Link href={"/" + data.url} className={styles.link}>

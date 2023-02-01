@@ -13,6 +13,7 @@ const Code = () => {
             title={data.title}
             text={data.text}
             github_url={data.github_url}
+            tech={data.tech}
           />
         );
       })}
