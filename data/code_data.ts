@@ -6,6 +6,8 @@ export interface Tech {
   typescript?: boolean | undefined;
   next?: boolean | undefined;
   mui?: boolean | undefined;
+  redux?: boolean | undefined;
+  framer?: boolean | undefined;
 }
 
 interface Code {
@@ -39,6 +41,7 @@ const code_data: Code[] = [
       react: true,
       typescript: true,
       mui: true,
+      redux: true
     },
   },
   {
@@ -74,6 +77,7 @@ const code_data: Code[] = [
       next: true,
       typescript: true,
       mui: true,
+      framer: true
     },
   },
   {
@@ -107,7 +111,6 @@ const code_data: Code[] = [
     github_url: "new-quiz-app",
     tech: {
       react: true,
-
       mui: true,
     },
   },

@@ -1,8 +1,24 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import { motion } from "framer-motion";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const variants = {
+  initial: { opacity: 1, x: -1600, scale: 0, rotate: 0 },
+  animate: {
+    opacity: 1,
+    scale: 1.5,
+    rotate: 180,
+    x: 0,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      repeatDelay: 5
+    }
+  },
+};
 
 export default function Home() {
   return (
@@ -14,7 +30,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Home Page </h1>
+        <div className={styles.hero}>
+          <h1>
+            Веб-разраб
+            <motion.div className={styles.span_o} variants={variants} initial="initial" animate="animate">
+              о
+            </motion.div>
+            тчик
+          </h1>
+          <h2>Дизайнер</h2><br />
+          <h3>Иллюстратор</h3>
+        </div>
       </main>
     </>
   );

@@ -10,6 +10,8 @@ import { SiTypescript } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaSass } from "react-icons/fa";
 import { SiMaterialui } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
+import { SiFramer } from "react-icons/si";
 
 interface Props {
   title: string;
@@ -35,10 +37,12 @@ const CodeCard = ({ title, text, github_url, tech }: Props) => {
           {tech.html ? <FaHtml5 color="silver" size={48} /> : ""}
           {tech.css ? <IoLogoCss3 color="silver" size={48} /> : ""}
           {tech.react ? <FaReact color="silver" size={48} /> : ""}
+          {tech.redux ? <SiRedux color="silver" size={48} /> : ""}
           {tech.sass ? <FaSass color="silver" size={48} /> : ""}
           {tech.typescript ? <SiTypescript color="silver" size={48} /> : ""}
           {tech.next ? <TbBrandNextjs color="silver" size={48} /> : ""}
           {tech.mui ? <SiMaterialui color="silver" size={48} /> : ""}
+          {tech.framer ? <SiFramer color="silver" size={48} /> : ""}
         </div>
 
         <br />

@@ -42,14 +42,14 @@
         linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
     background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
     background-repeat: no-repeat;
-    filter: contrast(100%);
-    transition: .5s;*/
-
+    filter: contrast(100%);*/
+    transition: .5s;
+    filter: grayscale(100%);
 }
 
 
 
-.image_container:hover .line {
+.square:hover .line {
     background-color: rgb(var(--primary-rgb));
     background-image: linear-gradient(-120deg, rgb(var(--primary-rgb)) 0%, var(--primary-light) 100%);
 
@@ -63,7 +63,8 @@
 
     /* background-position: 0px 0px;
     background-size: calc(100% - var(--offset)) calc(100% - var(--offset)); */
-
+    cursor: pointer;
+    filter: grayscale(0%);
 }
 
 .text_accent {
@@ -74,5 +75,5 @@
 }
 
 .text_accent p {
-    color:rgb(var(--primary-rgb)); 
+    color: rgb(var(--primary-rgb));
 }
