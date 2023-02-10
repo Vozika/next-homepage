@@ -14,8 +14,8 @@ const style = {
   // minWidth: "calc(100% - 128px)",
   minWidth: {
     xl: "50%",
-    lg: "80%",
-    md: "90%",
+    lg: "35%",
+    md: "55%",
     sm: "80%",
     xs: "75%",
   },

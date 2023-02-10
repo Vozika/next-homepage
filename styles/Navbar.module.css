@@ -34,3 +34,10 @@
     font-weight: bolder;
     color: rgb(var(--primary-rgb));
 }
+
+@media screen and (max-width: 800px) {
+    .main {
+        
+        margin-top: 32px;
+    }
+}

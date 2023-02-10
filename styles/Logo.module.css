@@ -1,12 +1,13 @@
 .logo {
     width: 330px;
     height: 126px;
+    position: relative;
 }
 
 .image {
     object-fit: contain;
     width: 100%;
-    position: relative !important;
+    position: relative;
     height: unset;
 }
 

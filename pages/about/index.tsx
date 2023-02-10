@@ -32,6 +32,8 @@ const textVariants = {
   },
 };
 
+const image_width = 350;
+
 const About = () => {
   const [showSecond, setShowSecond] = useState(false);
   const [showThird, setShowThird] = useState(false);
@@ -89,12 +91,12 @@ const About = () => {
               src="../images/about/budka_24.jpg"
               alt="Logo"
               // fill={true}
-              width={500}
-              height={500}
+              width={image_width}
+              height={image_width}
               className={styles.image}
-              //   sizes="(max-width: 800px) 100vw,
-              // (max-width: 1200px) 25vw,
-              // 33vw"
+              sizes="(max-width: 800px) 100vw,
+              (max-width: 1200px) 25vw,
+              33vw"
               priority
             />
           </div>
@@ -116,8 +118,8 @@ const About = () => {
                   src="../images/about/budka_6.jpg"
                   alt="Logo"
                   // fill={true}
-                  width={500}
-                  height={500}
+                  width={image_width}
+                  height={image_width}
                   className={styles.image}
                   //   sizes="(max-width: 800px) 100vw,
                   // (max-width: 1200px) 25vw,
@@ -145,8 +147,8 @@ const About = () => {
                   src="../images/about/budka_0.jpg"
                   alt="Logo"
                   // fill={true}
-                  width={500}
-                  height={500}
+                  width={image_width}
+                  height={image_width}
                   className={styles.image}
                   //   sizes="(max-width: 800px) 100vw,
                   // (max-width: 1200px) 25vw,
