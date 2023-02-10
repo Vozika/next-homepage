@@ -29,7 +29,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  margin: 126px;
+  margin: 63px;
 }
 
 a {
@@ -38,23 +38,31 @@ a {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   body {
     margin: 16px;
     /* font-size: 0.1rem; */
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (min-width: 1400px) {
   body {
     margin: 32px;
     /* font-size: 1.5rem; */
+
   }
 }
 
 @media screen and (min-width: 2000px) {
   body {
-
+    margin: 63px;
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  body {
+    margin: 126px;
+
   }
 }
