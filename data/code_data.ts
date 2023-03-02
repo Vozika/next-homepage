@@ -35,7 +35,7 @@ const code_data: Code[] = [
     id: 9,
     title: "Capital Quiz App 3",
     text: "Третья версия приложения, переписанная на Typescript. Добавлены новые возможности: поиск по странам и столицам, флаги государств, новая анимация. Основной алгоритм остаётся прежним, здесь коренных изменений нет. Material UI используется для элементов интерфейса по-прежнему.",
-    url: "newquiz",
+    url: "newquiz3",
     github_url: "new-quiz-app",
     tech: {
       react: true,
@@ -84,7 +84,7 @@ const code_data: Code[] = [
     id: 6,
     title: "Home Sweet Home 1.0",
     text: "Строго говоря, это не первая версия моего персонального сайта, всего их было несколько, и я уже сбился со счёта, сколько конкретно. Но поскольку это первый персональный проект, который я делал после долгого перерыва, пусть будет 1.0. React и Sass.",
-    url: "#",
+    url: "home1",
     github_url: "home-page",
     tech: {
       react: true,
@@ -107,7 +107,7 @@ const code_data: Code[] = [
     id: 7,
     title: "Capital Quiz App 2",
     text: "Новый алгоритм, новый интерфейс. Добавлены новые опции. Material UI используется по-прежнему.",
-    url: "newquiz",
+    url: "newquiz2",
     github_url: "new-quiz-app",
     tech: {
       react: true,

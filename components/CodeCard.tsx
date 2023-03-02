@@ -18,22 +18,24 @@ interface Props {
   text: string;
   github_url: string;
   tech: Tech;
+  url: string;
 }
 
 const url = "";
 const github_prefix = "https://github.com/Vozika/";
 
-const CodeCard = ({ title, text, github_url, tech }: Props) => {
+const CodeCard = ({ title, text, github_url, tech, url }: Props) => {
   return (
     <div className={styles.container}>
       <div className={styles.main}>
         <h1>{title}</h1>
         <p>
           {text}
-          <br /><br />
+          <br />
+          <br />
         </p>
 
-        <div  className={styles.tech_icons_container}>
+        <div className={styles.tech_icons_container}>
           {tech.html ? <FaHtml5 color="silver" size={48} /> : ""}
           {tech.css ? <IoLogoCss3 color="silver" size={48} /> : ""}
           {tech.react ? <FaReact color="silver" size={48} /> : ""}
@@ -50,7 +52,7 @@ const CodeCard = ({ title, text, github_url, tech }: Props) => {
         <div className={styles.icons_container}>
           <div className={styles.icons_container_block}>
             <VscMultipleWindows size={32} color="rgb(var(--primary-rgb))" />
-            <a href="">Посмотреть вживую</a>
+            <a href={url} target="_blank">Посмотреть вживую</a>
           </div>
           <div className={styles.icons_container_block}>
             <VscGithub size={32} color="rgb(var(--primary-rgb))" />

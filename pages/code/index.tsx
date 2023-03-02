@@ -31,6 +31,7 @@ const Code = () => {
               text={data.text}
               github_url={data.github_url}
               tech={data.tech}
+              url={"../live/" + data.url}
             />
           </motion.div>
         );
