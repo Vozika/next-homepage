@@ -1,3 +1,12 @@
+.list a {
+    text-decoration: underline;
+}
+
+.mailto {
+
+    text-decoration: underline;
+}
+
 .hero {
     display: flex;
     gap: 32px;
