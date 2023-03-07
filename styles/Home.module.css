@@ -56,6 +56,10 @@
   cursor: pointer;
 }
 
+.forth_line:hover a {
+  color: white;
+}
+
 @media screen and (max-width: 800px) {
 
   .first_line {

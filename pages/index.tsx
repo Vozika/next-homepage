@@ -1,9 +1,7 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 import { motion } from "framer-motion";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const variants = {
   initial: { opacity: 0, scale: 0, x: "100vw" },
@@ -12,8 +10,8 @@ const variants = {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 1,
-      staggerChildren: 0.15,
+      duration: .7,
+      staggerChildren: 0.1,
     },
   },
 };
@@ -22,7 +20,6 @@ export default function Home() {
   const firstLine = "Веб-разработчик";
   const secondLine = "Дизайнер";
   const thirdLine = "Иллюстратор";
-  const firstLineArray = firstLine.split("");
 
   function arrayFromLine(line: string) {
     return line.split("");
@@ -50,7 +47,7 @@ export default function Home() {
             return (
               <motion.div className={styles.first_line} variants={variants}>
                 <motion.p
-                  whileHover={{ scale: 0.8, rotate: 90 }}
+                  whileHover={{ scale: 0.8, rotate: 90, }}
                   whileTap={{
                     rotateY: 270,
                     scaleY: 2,
@@ -104,7 +101,7 @@ export default function Home() {
                 backgroundColor: "rgb(var(--primary-rgb))",
               }}
             >
-              и другое
+              <Link href={"about"}>и другое</Link>
             </motion.div>
           </motion.div>
         </motion.div>
