@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /live/santonit/
 Disallow: /live/dudchy/
 Disallow: /cgi-bin/
+Sitemap: /sitemap.xml
