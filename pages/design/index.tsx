@@ -39,9 +39,8 @@ const Design = () => {
           }
 
           return (
-            <motion.div variants={variants}>
+            <motion.div variants={variants} key={data.id}>
               <DesignCard
-                key={data.id}
                 url={`/images/${data.type}/000${(url = url + 1)}.jpg`}
                 title={data.title}
                 description={data.description}

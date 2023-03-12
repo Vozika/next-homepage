@@ -33,9 +33,8 @@ const Code = () => {
       >
         {code_data.map((data) => {
           return (
-            <motion.div variants={variants}>
+            <motion.div variants={variants} key={data.id}>
               <CodeCard
-                key={data.id}
                 title={data.title}
                 text={data.text}
                 github_url={data.github_url}

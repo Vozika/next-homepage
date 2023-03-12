@@ -10,7 +10,7 @@ const variants = {
     opacity: 1,
     scale: 1,
     transition: {
-      duration: .7,
+      duration: 0.7,
       staggerChildren: 0.1,
     },
   },
@@ -25,6 +25,10 @@ export default function Home() {
     return line.split("");
   }
 
+  let iFirstLine = 0;
+  let iSecondLine = 0;
+  let iThirdLine = 0;
+
   return (
     <>
       <Head>
@@ -34,7 +38,11 @@ export default function Home() {
           content="Сайт-портфолио Сергея Возыки, веб-разработчика, дизайнера, иллюстратора. Здесь можно посмотреть его графические и прочие работы, а также ряд сайтов и приложений, которые он сделал."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="https://www.vozika.ru/favicon.ico" type="image/x-icon"/>
+        <link
+          rel="icon"
+          href="https://www.vozika.ru/favicon.ico"
+          type="image/x-icon"
+        />
       </Head>
       <main className={styles.main}>
         <motion.div
@@ -44,10 +52,16 @@ export default function Home() {
           animate="animate"
         >
           {arrayFromLine(firstLine).map((character) => {
+            iFirstLine++;
+
             return (
-              <motion.div className={styles.first_line} variants={variants}>
+              <motion.div
+                className={styles.first_line}
+                variants={variants}
+                key={iFirstLine}
+              >
                 <motion.p
-                  whileHover={{ scale: 0.8, rotate: 90, }}
+                  whileHover={{ scale: 0.8, rotate: 90 }}
                   whileTap={{
                     rotateY: 270,
                     scaleY: 2,
@@ -62,8 +76,13 @@ export default function Home() {
           })}
           <br />
           {arrayFromLine(secondLine).map((character) => {
+            iSecondLine++;
             return (
-              <motion.div className={styles.second_line} variants={variants}>
+              <motion.div
+                className={styles.second_line}
+                variants={variants}
+                key={iSecondLine}
+              >
                 <motion.p
                   whileHover={{ scale: 1.2, rotate: -90 }}
                   whileTap={{
@@ -77,8 +96,13 @@ export default function Home() {
           })}
           <br />
           {arrayFromLine(thirdLine).map((character) => {
+            iThirdLine++;
             return (
-              <motion.div className={styles.third_line} variants={variants}>
+              <motion.div
+                className={styles.third_line}
+                variants={variants}
+                key={iThirdLine}
+              >
                 <motion.p
                   whileHover={{ scale: 1.7, y: 10, x: 20, rotateY: 180 }}
                   whileTap={{
